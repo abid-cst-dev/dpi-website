@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhaka Polytechnic Institute - Login</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b3c5d; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card h1 {
+  font-size: 1.3rem;
+  color: #0b3c5d;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.login-card h3 {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+/* Form Labels & Inputs */
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.box {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.box:focus {
+  outline: none;
+  border-color: #3282b8;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(50, 130, 184, 0.3);
+}
+
+/* Terms and Conditions Row */
+.terms-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.terms-group input {
+  width: auto;
+  margin: 0;
+}
+
+.terms-group label {
+  margin: 0;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Styled Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b3c5d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #3282b8;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Main Login Card Container -->
+  <div class="login-card">
+    <h1>DHAKA POLYTECHNIC INSTITUTE</h1>
+    <h3>Student Portal Login</h3>
+
+    <form action="cw.html">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" placeholder="Enter first name" class="box">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" placeholder="Enter last name" class="box">
+
+      <label for="mail">Email:</label>
+      <input type="text" id="mail" placeholder="Enter your email" class="box">
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" placeholder="Enter your password" class="box">
+
+      <label for="bdate">Birthdate:</label>
+      <input type="date" id="bdate" class="box">
+
+      <label>Select your gender:</label>
+      <select class="box">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <div class="terms-group">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to terms and conditions</label>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>

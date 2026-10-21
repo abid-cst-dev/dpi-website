@@ -1,0 +1,162 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #504e4e;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #0b3c5d;
+  color: #ffffff;
+  padding: 10rem 5rem;
+  text-align: center;
+  background-image: url('DPI.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: auto;
+}
+
+/* Navigation */
+nav {
+  background-color: #1d2731;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* navigation items */
+nav a {
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #3282b8;
+}
+
+/* for all section */
+section {
+  scroll-margin-top: 50px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(184, 194, 226, 0.938);
+}
+
+/* for all h2 */
+h2 {
+  color: #0b3c5d;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3282b8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* department section */
+#departments div {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#departments.h2 {
+  grid-column: span 4;
+}
+
+#departments{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* for cards */
+.card{
+  border: 1px solid #e0efff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #0b3c5d;
+  margin-bottom: 10px;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+/* FAQ Section */
+#faq details{
+  padding: 15px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #e0eefb;
+}
+
+#faq summary{
+font-weight: 600;
+font-size:x-large;
+color: #0b3c5d;
+display: flex;
+justify-content:space-between;
+}
+
+#faq summary::after{
+  content: "+";
+  color: #0b3c5d;
+}
+
+#faq details[open] summary::after{
+  content: "—";
+}
+
+/* contact section */
+#contact{
+  overflow: hidden;
+}
+
+#map-container{
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+iframe{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d2731;
+  color: #aaa;
+  margin-top: 40px;
+}
+
