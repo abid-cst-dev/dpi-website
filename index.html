@@ -123,29 +123,29 @@
 
     <form action="cw.html">
       <label for="fname">First Name:</label>
-      <input type="text" id="fname" placeholder="Enter first name" class="box">
+      <input type="text" id="fname" placeholder="Enter first name" class="box" required>
 
       <label for="lname">Last Name:</label>
-      <input type="text" id="lname" placeholder="Enter last name" class="box">
+      <input type="text" id="lname" placeholder="Enter last name" class="box" required>
 
       <label for="mail">Email:</label>
-      <input type="text" id="mail" placeholder="Enter your email" class="box">
+      <input type="email" id="mail" placeholder="Enter your email" class="box" required>
 
       <label for="pass">Password:</label>
-      <input type="password" id="pass" placeholder="Enter your password" class="box">
+      <input type="password" id="pass" placeholder="Enter your password" class="box" required>
 
       <label for="bdate">Birthdate:</label>
-      <input type="date" id="bdate" class="box">
+      <input type="date" id="bdate" class="box" required>
 
       <label>Select your gender:</label>
-      <select class="box">
+      <select class="box" required>
         <option>Male</option>
         <option>Female</option>
         <option>Other</option>
       </select>
 
       <div class="terms-group">
-        <input type="checkbox" id="terms">
+        <input type="checkbox" id="terms" required>
         <label for="terms">I agree to terms and conditions</label>
       </div>
 
